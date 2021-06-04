@@ -134,4 +134,19 @@
         
         .about-text {
             margin: 0 345px 0 50px;
+            font-weight: 600;
+            line-height: 1.4rem;
+        }
+        
+        .about-text p {
+            margin: 20px 0;
+        }
+        
+        .about-count {
+            margin-top: 150px;
+        }
+        
+        .project h2 {
+            font-weight: 900;
+            font-size: 84px;
         }
