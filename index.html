@@ -8,11 +8,11 @@
     <title>Boading Shenxiu Trading Co.,ltd</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <!-- Progress Bar CSS -->
+    <link rel="stylesheet" href="progresscircle.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -51,23 +51,23 @@
         <div class="navbar-text w-30 order-md-last social">
             <ul class="social-link d-flex">
                 <li class="social-item">
-                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><img src="images/social/instra.png" alt=""></a>
                 </li>
                 <li class="social-item">
-                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><img src="images/social/twitter.png" alt=""></a>
                 </li>
                 <li class="social-item">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><img src="images/social/fb.png" alt=""></a>
                 </li>
                 <li class="social-item">
-                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><img src="images/social/linkedin.png" alt=""></a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <section id="hero">
-        <div class="row">
+        <div class="row hero">
             <div class="col-md-7">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -75,6 +75,7 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
+
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="images/slide/slide-1.png" class="d-block w-100" alt="...">
@@ -96,6 +97,9 @@
                     </button>
                 </div>
                 <p class="text-center hero-text">Make your Brand more clever ?</p>
+            </div>
+            <div class="figure">
+                <img src="images/double-arrow.png" alt="" width="50px">
             </div>
             <div class="col-md-5">
                 <img src="images/slide/slide-right.png" alt="">
@@ -143,6 +147,7 @@
             </div>
         </div>
     </section>
+
     <!-- About Us Section -->
     <section id="about-us">
         <div class="row">
@@ -176,6 +181,7 @@
             </div>
         </div>
     </section>
+
     <!-- Service Section -->
     <section id="service">
         <div class="container">
@@ -191,7 +197,7 @@
                 <div class="col-md-9">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="service-card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Cap Design</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero corporis nisi magni velit? Magnam quae sequi ad quo veritatis?</p>
@@ -199,7 +205,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="service-card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Clothing</h5>
                                     <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis facilis fuga sed iusto nam quo necessitatibus natus ut minus quaerat.</p>
@@ -207,7 +213,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="service-card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Nanny Pack</h5>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
@@ -215,7 +221,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="service-card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Scarf</h5>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -223,7 +229,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="service-card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Visor</h5>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -231,7 +237,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="service-card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Miki Hat</h5>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -242,13 +248,17 @@
                 </div>
             </div>
         </div>
-        <div class="servce-middle">
+
+        <!-- Middle Service -->
+        <div class="service-middle">
             <img src="images/services.jpg" alt="" width="100%">
             <div class="container">
                 <img src="images/icon-arrow-big.png" alt="">
             </div>
         </div>
-        <div class="servce-last container">
+
+        <!-- Last Service -->
+        <div class="service-last container">
             <div class="row">
                 <div class="col-md-6">
                     <p class="service-last-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
@@ -258,14 +268,393 @@
                         <p>OUR SERVICE</p>
                         <h3>We worked hard to achieve best quality
                         </h3>
-                        <p class="box">Watch Video</p>
+                        <div class="d-flex justify-align-end">
+                            <p class="box">Watch Video</p>
+                        </div>
+                        <p></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Product Section -->
+    <section id="product">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-4 g-3">
+                <div class="col">
+                    <div class="product h-100 shadow-sm p-3 bg-body rounded">
+                        <img src="images/products/product-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5>5 Panel Camp Cap</h5>
+                            <h3>$100.00</h3>
+                            <img class="color" src="images/color.jpg" class="card-img-top" width="75%">
+                            <p><span>Material:</span>Acrylic</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <p class="m-0">Choose</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="product h-100 shadow-sm p-3 bg-body rounded">
+                        <img src="images/products/product-2.jpg " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5>Bucket Hat</h5>
+                            <h3>$100.00</h3>
+                            <img class="color" src="images/color.jpg" class="card-img-top" width="75%">
+                            <p><span>Material:</span>Acrylic</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <p class="m-0">Choose</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="product h-100 shadow-sm p-3 bg-body rounded">
+                        <img src="images/products/product-3.jpg " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5>6 Panel Trucker Cap</h5>
+                            <h3>$100.00</h3>
+                            <img class="color" src="images/color.jpg" class="card-img-top" width="75%">
+                            <p><span>Material:</span>Acrylic</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <p class="m-0">Choose</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="product h-100 shadow-sm p-3 bg-body rounded">
+                        <img src="images/products/product-4.jpg " class="card-img-top " width="100% " ">
+                            <div class="card-body ">
+                                <h5>5 Panel Camp Cap</h5>
+                                <h3>$100.00</h3>
+                                <img class="color " src="images/color.jpg " class="card-img-top " width="75% ">
+                                <p><span>Material:</span>Acrylic</p>
+                            </div>
+                            <div class="card-footer text-center ">
+                                <p class="m-0 ">Choose</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see-more text-center ">
+                <p class="m-0 ">Show More</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Order Process -->
+    <section id="order-process ">
+        <div class="container ">
+            <div class="service-text ">
+                <p>ORDER PROCESS</p>
+                <h3>We provide you 6 steps order 
+                    process</h3>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-2 ">
+                
+            </div> 
+            <div class="col-md-3 process ">
+                <ul>
+                    <li>
+                        <h6>SUBMIT YOUR ARTWORK & INFO</h6>
+                        <p>STEEP 1</p>
+                    </li>
+                    <li>
+                        <h6>2FINE TUNING THE DETAILS</h6>
+                        <p>STEEP 2</p>
+                    </li>
+                    <li>
+                        <h6>PRICING</h6>
+                        <p>STEEP 3</p>
+                    </li>
+                    <li>
+                        <h6>SAMPLE ORDER</h6>
+                        <p>STEEP 4</p>
+                    </li>
+                    <li>
+                        <h6>PRODUCTION ORDER</h6>
+                        <p>STEEP 5</p>
+                    </li>
+                    <li>
+                        <h6>SUBMIT YOUR ARTWORK & INFO</h6>
+                        <p>STEEP 6</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-1 ">
+
+            </div>
+            <div class="col-md-6 process-right ">
+                <img src="images/process.jpg " width="100% ">
+                <div class="process-up ">
+                    <img src="images/process-4.png " alt=" ">
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+<!-- Work Section -->
+    <section id="work ">
+        <div class="row work ">
+            <div class="col-md-2 ">
+                <img src="images/slide-1.png " alt=" ">
+            </div>
+            <div class="col-md-3 ">
+                <img src="images/slide-2.png " alt=" ">
+            </div>
+            <div class="col-md-3 ">
+                <img src="images/slide-3.png " alt=" ">
+            </div>
+            <div class="col-md-4 ">
+                <div class="service-text work-text ">
+                    <p>OUR WORK</p>
+                    <h3>See our last work</h3>
+                    <img src=" images/double-arrow.png " alt=" " width="50px ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Experience Section -->
+    <section id="experience ">
+        <div class="container ">
+            <div class="service-text work-text ">
+                <p>OUR EXPERIENCE</p>
+                <h3>Engaging, purposeful and creative
+                    aproch.</h3>
+            </div>
+            <div class="row experiance-bar ">
+                <div class="col-md 3 text-center ">
+                    <div class="circlechart " data-percentage="75 ">
+                        75%
+                    </div>
+                    <div class="circel-text ">
+                        <h5>Happy Customer</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dicta.</p>
+                    </div>
+                </div>
+
+                <div class="col-md 3 text-center ">
+                    <div class="circlechart "data-percentage="94 ">
+                        94%
+                    </div>
+                    <div class="circel-text ">
+                        <h5>Working Hours</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dicta.</p>
+                    </div>
+                </div>
+
+                <div class="col-md 3 text-center ">
+                    <div class="circlechart "data-percentage="69 ">
+                        69%
+                    </div>
+                    <div class="circel-text ">
+                        <h5>Awards</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dicta.</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md 3 text-center ">
+                    <div class="circlechart " data-percentage="96 ">
+                        96%
+                    </div>
+                    <div class="circel-text ">
+                        <h5>Service</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dicta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- TagLine Section -->
+    <section id="tagline d-flex align-item-center ">
+    <div class="tagline d-flex align-items-center justify-content-center text-center ">
+        <div>
+            <h3>Design your own cap today</h3>
+            <p class="tag-box ">Choose your hat</p>
+        </div>
+    </div>
+    </section>
+
+<!-- News Section -->
+    <section id="news ">
+        <div class="container ">
+            <div class="service-text ">
+                <div>
+                    <p>Latest News</p>
+                        <h3>The might be interested in reading these
+                            articles after you finished with the current
+                            post.</h3>
+                </div>
+                <div class="d-flex justify-content-end ">
+                    <p class="box ">Watch Video</p>
+                </div>
+            </div>
+        </div>
+        <div class="row news-gallery ">
+            <div class="col-md-7 news-left ">
+                <img src="images/news-1.jpg " width="100% ">
+                <div class="trend ">
+                    <p class="trend-box "> Choose trend</p>
+                    
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="news-card ">
+                    <img src="images/news-2.jpg " width="100% ">
+                    <p>Knitted Hat</p>
+                    <h5>SUBMIT YOUR ARTWORK & INFO</h5>
+                </div>
+                <div class="news-card ">
+                    <img src="images/news-3.jpg " width="100% ">
+                    <p>Knitted Hat</p>
+                    <h5>SUBMIT YOUR ARTWORK & INFO</h5>
+                </div>
+            </div>
+            <div class="col-md-2 "></div>
+        </div>
+    </section>
+
+<!-- Client Feedback Section -->
+    <section id="testimonial ">
+        <div class="container ">
+            <div class="row d- flex align-items-center ">
+                <div class="col-md-1 "></div>
+                <div class="col-md-6 ">
+                    <div class="service-text ">
+                        <p>Latest News</p>
+                        <h5>Client says about us</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, laborum.</p>   
+                    </div>
+                </div>
+                <div class="col-md-5 ">
+                    <div class="client ">
+                        <div class="client-pic d-flex align-items-center ">
+                            <img src="images/client.png " alt=" ">
+                            <h5>Alex Telex</h5>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, nam deserunt, totam ipsa ut cupiditate aperiam numquam officia itaque voluptates debitis eligendi fugiat reprehenderit eum repellat ullam, modi ad? Quam!</p>
+                        <img src=" images/double-arrow-2.png " width=" 50px ">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- Help Section -->
+    <section id="help ">
+        <div class="help d-flex align-items-center ">
+            <div class=" container ">
+                <div class="row flex align-items-center ">
+                    <div class="col-md-6 ">
+                        <div>
+                            <p>GET HELP</p>
+                            <h4>Need help creating design?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, praesentium.</p>
+                            <p class="box help-box ">Get help</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 d- ">
+                        <div>
+                            <img class="help-pic " src=" images/help-1.jpg " alt=" ">
+                            <img class="help-pic " src=" images/help-2.jpg " alt=" ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer Section -->
+    <footer>
+        <div class="row ">
+            <div class="col-md-6 footer-left d-flex align-items-center ">
+                <div>
+                    <img src=" images/logo-v2.png " alt=" ">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi perferendis doloribus ex necessitatibus quod nulla ipsum, quibusdam maiores aliquam! Dolor ad quo eius quibusdam! Et laudantium est repellendus labore velit.</p>
+                </div>
+            </div>
+            <div class="col-md-6 footer-right d-flex align-items-center justify-content-center ">
+                <div class="col-md-6 ">
+                    <div class="right-text ">
+                        <h5>VISIT US</h5>
+                        <address>
+                            Hongyue International 2420, Chaoyang South Street #777, Jingxiu District, Baoding, Hebei, China (Mainland)
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="right-text ">
+                        <h5>CONTACT US</h5>
+                        <p>+86 15100200275381</p>
+                        <p>bruce@Shenxiucaps.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer ">
+            <div class="d-flex w-30 order-0 ">
+                <p>Copyright ©  2021 Baoding Shenxiu Trading Co.,ltd. All rights reserved.</p>
+            </div>
+            <div class="list justify-content-center order-2 ">
+                <ul class=" footer-list d-flex ">
+                    <li>NEW RELEASES</li>
+                    <li>PRODUCT CATEGORIES</li>
+                    <li>DECORATION</li>
+                    <li>NEWS</li>
+                    <li>ABOUT</li>
+                </ul>
+            </div>
+            <div class="d-flex w-20 order-md-last ">
+                <ul class="social-link d-flex ">
+                    <li class="social-item ">
+                        <a href=" "><img src="images/social/instra.png " alt=" "></a>
+                    </li>
+                    <li class="social-item ">
+                        <a href=" "><img src="images/social/twitter.png " alt=" "></a>
+                    </li>
+                    <li class="social-item ">
+                        <a href=" "><img src="images/social/fb.png " alt=" "></a>
+                    </li>
+                    <li class="social-item ">
+                        <a href=" "><img src="images/social/linkedin.png " alt=" "></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+<!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 " crossorigin="anonymous "></script>
+    
+<!-- Jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js " integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+<!-- Progress Bar -->
+    <script src="progresscircle.js "></script>
+
+    <script>
+        $('.circlechart').circlechart();
+    </script>
+
 </body>
+
+</html>
+
+</html>
 
 </html>

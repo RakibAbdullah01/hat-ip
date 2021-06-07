@@ -1,227 +1,496 @@
-    /* Common CSS  */
-    
-    *,
-    *::after,
-    *::before,
-    {
-        padding: 0;
-        margin: 0;
-    }
-    
-    body {
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-        max-width: 1440px;
-    }
-    
-    section {
-        margin-bottom: 65px;
-    }
-    /* Navbar */
-    
-    .navbar {
-        margin: 20px 35px;
-    }
-    
-    .navbar-nav li {
-        display: table-cell;
-        position: relative;
-    }
-    
-    .navbar-nav a {
-        font-weight: bold;
-        font-size: large;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 0.15em;
-        display: inline-block;
-        position: relative;
-    }
-    
-    .navbar-nav a {
-        color: black;
-    }
-    /* Navbar After Effect */
-    
-    .navbar-nav a:after {
-        bottom: -1;
-        content: "";
-        display: block;
-        height: 4px;
-        left: 50%;
-        position: absolute;
-        background: #ffc91d;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;
-    }
-    /* Navbar Hover Effect */
-    
-    .navbar-nav a:hover:after {
-        width: 100%;
-        left: 0;
-    }
-    /* Social Link Part */
-    
-    .social-link {
-        list-style: none;
-    }
-    
-    .social-item {
-        margin: 0 10px;
-    }
-    
-    .social-item a {
-        text-decoration: none;
-    }
-    
-    .fab {
-        color: black;
-        font-size: 20px;
-    }
-    /* Slider Section */
-    
-    .row {
-        margin: 0;
-    }
-    
-    .col-md-7,
-    .col-md-5,
-    .col-md-6,
-    .col-md-3,
-    .col-md-9 {
-        padding: 0;
-    }
-    
-    #hero .row .col-md-7 img {
-        object-fit: cover;
-        object-position: center;
-        height: 640px;
-    }
-    
-    .hero-text {
-        margin: 35px;
-    }
-    
-    #hero .row .col-md-5 img {
-        width: 100%;
-        height: 725px;
-    }
-    /* Skills Section */
-    
-    .card {
-        text-align: center;
-        border: none;
-    }
-    
-    .card img {
-        width: 45px;
-    }
-    /* About-Us Section */
-    
-    .about-img {
-        position: relative;
-    }
-    
-    .about-img img {
-        width: 90%;
-    }
-    
-    .experiance {
-        padding: 10px 20px;
-        background-color: #000;
-        position: absolute;
-        text-align: center;
-        bottom: -45px;
-        right: 135px;
-    }
-    
-    .experiance h3 {
-        color: #ffc91d;
-    }
-    
-    .experiance p {
-        color: #fff;
-    }
-    
-    .about-text,
-    .service-text {
-        margin: 0 250px 0 0;
-        font-weight: 600;
-        line-height: 1.4rem;
-    }
-    
-    .about-text p,
-    .service-text p {
-        margin: 20px 0;
-    }
-    
-    .project h2 {
-        font-weight: 900;
-        font-size: 84px;
-    }
-    /* Service Section */
-    
-    .box {
-        border: 1px solid #ffd430;
-        padding: 10px;
-        display: inline-block;
-        margin-top: 20px;
-    }
-    
-    .card {
-        border-top: 1px solid #000;
-        border-radius: 0;
-        width: 75%;
-        padding: 15px;
-        padding-bottom: 40px;
-        text-align: left;
-    }
-    
-    .card-title {
-        text-transform: uppercase;
-        font-weight: 600;
-    }
-    
-    .card:hover {
-        background-color: #ffd430;
-        border: none;
-        background-image: url(images/icon-arrow.png);
-        background-size: 25px;
-        background-position-x: 30px;
-        background-position-y: 220px;
-        background-repeat: no-repeat;
-    }
-    
-    #service {
-        position: relative;
-    }
-    
-    .servce-middle {
-        margin-top: 50px;
-    }
-    
-    .servce-middle .container {
-        position: absolute;
-        top: 695px;
-        left: 105px;
-    }
-    
-    .servce-last {
-        margin-top: 75px;
-    }
-    
-    .servce-last .service-last-left {
-        margin: 20px;
-    }
-    
-    .servce-last .service-text {
-        margin: 0;
-        margin-left: 20px;
-    }
-    
-    .servce-last .service-text p {
-        margin: 0;
-    }
-    
-    .servce-last .service-text .box {}
+/* Common CSS  */
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-size: 14px;
+    max-width: 1440px;
+}
+
+section {
+    margin-bottom: 65px;
+}
+
+
+/* Navbar */
+
+.navbar {
+    margin: 20px 35px;
+}
+
+.navbar-nav li {
+    display: table-cell;
+    position: relative;
+}
+
+.navbar-nav a {
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar-nav a {
+    color: black;
+}
+
+
+/* Navbar After Effect */
+
+.navbar-nav a:after {
+    bottom: -1;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    background: #ffc91d;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+
+/* Navbar Hover Effect */
+
+.navbar-nav a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar-nav a {
+    font-size: 14px;
+}
+
+
+/* Social Link Part */
+
+.social-link {
+    list-style: none;
+}
+
+.social-item {
+    margin: 0 10px;
+}
+
+.social-item a {
+    text-decoration: none;
+}
+
+.fab {
+    color: black;
+    font-size: 20px;
+}
+
+
+/* Slider Section */
+
+.row {
+    margin: 0;
+}
+
+.col-md-2,
+.col-md-4,
+.col-md-8,
+.col-md-7,
+.col-md-5,
+.col-md-6,
+.col-md-3,
+.col-md-9 {
+    padding: 0;
+}
+
+#hero .row .col-md-7 img {
+    object-fit: cover;
+    object-position: center;
+    height: 640px;
+}
+
+.hero-text {
+    margin: 35px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero .figure {
+    position: absolute;
+    top: 680px;
+    left: 750px;
+}
+
+#hero .row .col-md-5 img {
+    width: 100%;
+    height: 725px;
+}
+
+
+/* Skills Section */
+
+.card {
+    text-align: center;
+    border: none;
+}
+
+.card img {
+    width: 45px;
+}
+
+
+/* About-Us Section */
+
+.about-img {
+    position: relative;
+}
+
+.about-img img {
+    width: 90%;
+}
+
+.experiance {
+    padding: 10px 20px;
+    background-color: #000;
+    position: absolute;
+    text-align: center;
+    bottom: -45px;
+    right: 135px;
+}
+
+.experiance h3 {
+    color: #ffc91d;
+}
+
+.experiance p {
+    color: #fff;
+}
+
+.about-text,
+.service-text {
+    margin: 0 250px 0 0;
+    font-weight: 600;
+    line-height: 1.4rem;
+}
+
+.about-text p,
+.service-text p {
+    margin: 20px 0;
+}
+
+.project h2 {
+    font-weight: 900;
+    font-size: 84px;
+}
+
+
+/* Service Section */
+
+.box {
+    border: 1px solid #ffd430;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.box:hover {
+    color: #fff;
+    background-color: #ffd430;
+    cursor: pointer;
+}
+
+.service-card {
+    border-top: 1px solid #000;
+    border-radius: 0;
+    width: 75%;
+    padding: 15px;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.service-card:hover {
+    background-color: #ffd430;
+    border: none;
+    background-image: url(images/icon-arrow.png);
+    background-size: 25px;
+    background-position-x: 30px;
+    background-position-y: 220px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#service {
+    position: relative;
+}
+
+.service-middle {
+    margin-top: 50px;
+}
+
+.service-middle .container {
+    position: absolute;
+    top: 645px;
+    left: 105px;
+}
+
+.service-last {
+    margin-top: 75px;
+}
+
+.service-last .service-last-left {
+    margin: 20px;
+}
+
+.service-last .service-text {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.service-last .service-text .box {
+    transform: translate(365%, 0%);
+}
+
+.service-last .service-text .box p {
+    margin: 0;
+}
+
+
+/* Product Section */
+
+.product .color {
+    margin-bottom: 10px;
+}
+
+.product span {
+    font-weight: 600;
+}
+
+.card-footer {
+    font-weight: 600;
+    background-color: #ffd430;
+    border: none;
+}
+
+.see-more {
+    margin-top: 60px;
+    font-weight: 600;
+    background-color: #dbdbdb;
+    border: none;
+    padding: 10px 30px;
+    display: inline-block;
+    transform: translate(449%, 0%);
+}
+
+
+/* Process Section */
+
+.process ul {
+    margin-top: 20px;
+    line-height: normal;
+}
+
+.process ul li {
+    list-style: none;
+    padding-left: 35px;
+}
+
+.process ul li:hover {
+    background-image: url(images/arrow.png);
+    background-position-x: -5px;
+    background-position-y: 15px;
+    background-repeat: no-repeat;
+    background-color: #ffd430;
+    color: #fff;
+}
+
+.process ul li h6 {
+    font-weight: 600;
+}
+
+.process-right {
+    position: relative;
+}
+
+.process-up {
+    position: absolute;
+    top: 250px;
+    left: 85px;
+}
+
+.process-up img {
+    width: 100%;
+    height: 180px;
+}
+
+
+/* Work Section */
+
+.work {
+    margin-top: 120px;
+}
+
+.work-text {
+    margin: 0;
+}
+
+.about-text p,
+.service-text p {
+    margin: 0;
+}
+
+
+/* Circular Progress Bar  */
+
+.experiance-bar {
+    margin-top: 40px;
+}
+
+.circel-text {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.circel-text h3 {
+    font-weight: bold;
+}
+
+
+/* Tagline Section */
+
+.tagline {
+    height: 250px;
+    background-color: #ffd430;
+}
+
+.tag-box {
+    color: #fff;
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #000;
+    font-weight: 700;
+}
+
+.tag-box:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+}
+
+
+/* News Gallery */
+
+.news-gallery {
+    margin-top: 50px;
+}
+
+.news-card {
+    margin: 0 20px;
+}
+
+.news-card img {
+    width: 100%;
+    height: 160px;
+}
+
+.news-card p {
+    margin: 0;
+}
+
+.news-left {
+    position: relative;
+}
+
+.trend {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+.trend-box {
+    background-color: #ffc91d;
+    padding: 10px 80px;
+    font-weight: 700;
+}
+
+
+/* Testimonial Section */
+
+#testimonial>.service-text {
+    margin: 0;
+}
+
+.client {
+    background: #ffd430;
+    padding: 30px;
+}
+
+.client-pic h5 {
+    margin-left: 20px;
+}
+
+
+/* Help Section */
+
+section#help\ {
+    margin-bottom: 0;
+}
+
+.help {
+    height: 415px;
+    background-color: #dbdbdb;
+}
+
+.help-box {
+    background-color: #ffd430;
+    color: black;
+    padding: 10px 50px;
+    font-weight: 700;
+}
+
+.help-pic {
+    margin: 0 10px;
+}
+
+
+/* Footer Section */
+
+.footer-left {
+    background-color: #000;
+    padding: 40px;
+}
+
+.footer-left p {
+    padding-top: 10px;
+    color: #fff;
+}
+
+.right-text {
+    padding-left: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-list li {
+    margin: 0 10px;
+}
