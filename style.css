@@ -270,6 +270,12 @@ section {
 
 /* Product Section */
 
+.product a,
+.see-more a {
+    text-decoration: none;
+    color: black;
+}
+
 .product .color {
     margin-bottom: 10px;
 }
